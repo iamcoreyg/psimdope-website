@@ -9,9 +9,12 @@ $(document).ready( function() {
         navIsOpen = true
     })
 
-    $(".circle a").on('mouseenter', function() {
-        if(navIsOpen)
-            $("#nav-title").text( $(this).data("nav") )
+    $(".circle a").hover(function() {
+        var $navID =  $("#nav-id")
+        if(navIsOpen) {
+            $navID.text( $(this).data("nav") )
+            $navID.toggleClass("show")
+        }
     })
 
 })
