@@ -108,13 +108,22 @@ body {
 
 .initial-circles {
   position: absolute;
-  left: calc(50% - 60px);
+  left: calc(50% - 45px);
   opacity: 0;
 }
 
 .move-circles {
   opacity: 1;
   z-index: 9999;
+}
+
+#nav-id {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 8pt;
+  letter-spacing: 3px;
+  color: #CECECE;
 }
 
 /* Responsive: Portrait tablets and up */
