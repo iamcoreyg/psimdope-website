@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".move-circles").on("click",function(){return!1});var a=!1;$(".move-circles").on("click",function(){$(".circle").removeClass(".move-circles"),$(".circle").removeClass("initial-circles",1e3,"easeInBack"),a=!0}),$(".circle a").on("mouseenter",function(){a&&$("#nav-title").text($(this).data("nav"))})});
