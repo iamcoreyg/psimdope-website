@@ -49,6 +49,7 @@ body {
 }
 
 .circle {
+  position: absolute;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -81,22 +82,33 @@ body {
 
 .purp {
   background: #23143b;
+  left: 40%;
 }
 
 .green {
   background: #80d97d;
+  left: 20%;
 }
 
 .yellow {
   background: #faff8b;
+  left: 0%;
 }
 
 .berg {
   background: #920146;
+  left: 60%;
+
 }
 
 .orange {
   background: #b66047;
+  left: 80%;
+}
+
+.initial-circles {
+  position: absolute;
+  left: calc(50% - 60px);
 }
 
 
