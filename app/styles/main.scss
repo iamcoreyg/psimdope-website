@@ -109,8 +109,13 @@ body {
 .initial-circles {
   position: absolute;
   left: calc(50% - 60px);
+  opacity: 0;
 }
 
+.move-circles {
+  opacity: 1;
+  z-index: 9999;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
