@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".move-circles").on("click",function(){return!1});var a=!1;$(".move-circles").on("click",function(){$(".circle").removeClass(".move-circles"),$(".circle").removeClass("initial-circles",1e3,"easeInBack"),a=!0}),$(".circle a").hover(function(){var b=$("#nav-id");a&&(b.text($(this).data("nav")),b.toggleClass("show"))})});
