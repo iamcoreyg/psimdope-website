@@ -43,7 +43,7 @@ body {
 
 .circle-wrap {
   width: 100%;
-  max-width: 470px;
+  max-width: 380px;
   margin: auto;
   position: fixed;
   top: calc(50% - 30px);
@@ -56,12 +56,16 @@ body {
 }
 
 .small-circle-wrap  {
-  width: 200px;
+  width: 50px;
   margin: auto;
   position: fixed;
   padding: 0;
   top: 90%;
   left: 0;
+
+  &:hover {
+    width: 200px;
+  }
 
   #nav-id {
     margin: 40px 30px 0;
@@ -99,7 +103,7 @@ body {
 }
 
 .circle a {
-  padding: 20px;
+  padding: 20px 15px;
 }
 
 $purp: #23143b;
