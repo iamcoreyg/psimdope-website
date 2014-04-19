@@ -1,11 +1,16 @@
 $(document).ready( function() {
     $('.full-screen').css('height', $(window).height())
 
+    fcVideo('#about')
+    var navIsOpen = false
+
     $('.move-circles').on('click', function(){
-        return false
+        if(navIsOpen == false) {
+            return false
+        }
     })
 
-    var navIsOpen = false
+
 
     var openNavigation = function() {
         $('.circle').removeClass('move-circles')

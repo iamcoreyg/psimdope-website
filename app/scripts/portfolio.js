@@ -1,6 +1,4 @@
-$(document).ready(function() {
-    var template = $('#template').html();
-    Mustache.parse(template);   // optional, speeds up future uses
+$(window).load(function() {
     $.each( tumblr_api_read.posts, function( key, value ) {
         $("#"+value.tags[0]).append( "<div class='portfolio-piece col-sm-3' id=" + value.id +"></div>")
         var image = value['photo-url-250']

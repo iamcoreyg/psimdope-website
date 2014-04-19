@@ -42,11 +42,12 @@ body {
 }
 
 .circle-wrap {
-  width: 470px;
+  width: 100%;
+  max-width: 470px;
   margin: auto;
   position: fixed;
   top: calc(50% - 30px);
-  left: calc(50% - 230px);
+  left: calc(50% - 200px);
   transition: all 1s;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;

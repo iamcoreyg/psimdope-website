@@ -34,6 +34,7 @@ iamcoreyg.com
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/animate.css">
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
         <script src="bower_components/modernizr/modernizr.js"></script>
@@ -44,11 +45,11 @@ iamcoreyg.com
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="container full-screen" id="home">
-            <div class="circle-wrap">
-                <div class="circle yellow initial-circles"><a href="#" data-nav="portfolio"></a></div>
+        <div class="container full-screen" id="home" style="height: 2000px">
+            <div class="circle-wrap wow fadeInDown">
+                <div class="circle yellow initial-circles"><a href="#" data-nav="blog"></a></div>
                 <div class="circle green initial-circles"><a href="#" data-nav="clients"></a></div>
-                <div class="circle purp initial-circles move-circles"><a href="#" data-nav="blog"></a></div>
+                <div class="circle purp initial-circles move-circles"><a href="#portfolio" data-nav="portfolio"></a></div>
                 <div class="circle berg initial-circles"><a href="#" data-nav="about"></a></div>
                 <div class="circle orange initial-circles"><a href="#" data-nav="contact"></a></div>
                 <div id="nav-id" class="show"></div>
@@ -57,7 +58,7 @@ iamcoreyg.com
 
         <div id="portfolio" class="full-screen">
             <div id="categories" class="col-sm-2">
-                <ul>
+                <ul class="wow fadeInLeft">
 
                     <li><div class="circle category-circle"></div><a href="#">Portrait</a> </li>
                     <li><div class="circle category-circle"></div><a href="#">Commissions</a> </li>
@@ -67,10 +68,10 @@ iamcoreyg.com
                 </ul>
             </div>
             <div class="col-sm-10" id="pieces">
-               <div id="portrait" class="row">
+               <div id="portrait" class="row wow fadeInDown" data-wow-delay="1s">
                    <h1>Portraits</h1>
                </div>
-                <div id="commission" class="row">
+                <div id="commission" class="row wow fadeInDown" data-wow-delay="1s">
                     <h1>Comissions</h1>
                 </div>
             </div>
@@ -82,6 +83,7 @@ iamcoreyg.com
 
         <div id="about" class="full-screen">
             <h1>About</h1>
+            <!--<iframe src="//player.vimeo.com/video/89417464?title=0&amp;byline=0&amp;portrait=0&amp;color=e01219" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
         </div>
 
         <!-- build:js scripts/vendor.js -->
@@ -114,13 +116,18 @@ iamcoreyg.com
         <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
         <script src="bower_components/sass-bootstrap/js/tab.js"></script>
         <script src="bower_components/jquery-waypoints/waypoints.min.js"></script>
-        <script src="bower_components/mustache.js/mustache.js"></script>
+        <script src="scripts/libs/fcVideo.js"></script>
 
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <script src="scripts/portfolio.js"></script>
+
         <!-- endbuild -->
+        <script src="scripts/libs/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
 </body>
 </html>
