@@ -1,20 +1,37 @@
 $(document).ready( function() {
-    $(".move-circles").on('click', function(){
+    $('.full-screen').css('height', $(window).height())
+
+    $('.move-circles').on('click', function(){
         return false
     })
+
     var navIsOpen = false
-    $(".move-circles").on('click', function() {
-        $(".circle").removeClass(".move-circles")
-        $(".circle").removeClass("initial-circles", 1000, "easeInBack" )
+
+    var openNavigation = function() {
+        $('.circle').removeClass('move-circles')
+        $('.circle').removeClass('initial-circles', 1000, 'easeInBack' )
         navIsOpen = true
+    }
+
+    $('.move-circles').on('click', function() {
+        openNavigation()
     })
 
-    $(".circle a").hover(function() {
-        var $navID =  $("#nav-id")
+    var $navID =  $('#nav-id')
+    $('.circle a').hover(function() {
         if(navIsOpen) {
-            $navID.text( $(this).data("nav") )
-            $navID.toggleClass("show")
+            $navID.text( $(this).data('nav') )
+            $navID.toggleClass('show')
         }
     })
+
+    $('#portfolio').waypoint(function() {
+        if(navIsOpen == false) {
+            openNavigation()
+            $navID.removeClass('show')
+        }
+        $('.circle-wrap ').toggleClass('small-circle-wrap')
+    }, { offset: '80%' });
+
 
 })

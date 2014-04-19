@@ -1,7 +1,9 @@
 {
   "name": "psimdope",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "tumblr.js": "0.0.4"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
