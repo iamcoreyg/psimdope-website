@@ -29,13 +29,4 @@ $(document).ready( function() {
         }
     })
 
-    $('#portfolio').waypoint(function() {
-        if(navIsOpen == false) {
-            openNavigation()
-            $navID.removeClass('show')
-        }
-        $('.circle-wrap ').toggleClass('small-circle-wrap')
-    }, { offset: '80%' });
-
-
 })
