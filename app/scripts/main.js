@@ -1,7 +1,6 @@
 $(document).ready( function() {
     $('.full-screen').css('height', $(window).height())
 
-    fcVideo('#about')
     var navIsOpen = false
 
     $('.move-circles').on('click', function(){
