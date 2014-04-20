@@ -56,16 +56,12 @@ body {
 }
 
 .small-circle-wrap  {
-  width: 50px;
+  width: 200px;
   margin: auto;
   position: fixed;
   padding: 0;
   top: 90%;
   left: 0;
-
-  &:hover {
-    width: 200px;
-  }
 
   #nav-id {
     margin: 40px 30px 0;
