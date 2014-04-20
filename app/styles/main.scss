@@ -14,6 +14,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
+  font-family: Roboto, sans-serif;
 }
 
 /* Pop */
@@ -42,8 +43,7 @@ body {
 }
 
 .circle-wrap {
-  width: 100%;
-  max-width: 380px;
+  width: 380px;
   margin: auto;
   position: fixed;
   top: calc(50% - 30px);
@@ -206,6 +206,12 @@ $orange:  #b66047;
   height: 100%;
 }
 
+#pieces {
+  div {
+    padding: 20px;
+  }
+}
+
 #portfolio {
   position: relative;
 
@@ -266,6 +272,14 @@ h1 {
   bottom: -13%;
   left: 0;
   width: 75%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 footer {
