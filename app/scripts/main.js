@@ -29,4 +29,11 @@ $(document).ready( function() {
         }
     })
 
+    $('#categories a').on('click', function() {
+        var category = $(this).data('category')
+        $("#pieces .row").removeClass('show')
+        $("#" + category).addClass('show')
+        return false
+    })
+
 })
