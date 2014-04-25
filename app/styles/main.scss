@@ -15,6 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
   font-family: Roboto, sans-serif;
+  text-transform: lowercase;
 }
 
 /* Pop */
@@ -203,11 +204,25 @@ $orange:  #b66047;
 }
 
 #pieces {
-  padding: 20px 0;
+  position: relative;
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
 
   .row {
     display: none;
   }
+
+  .portfolio-piece {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: -1000px;
+  }
+}
+
+.portfolio-piece-selected {
+  top: 0 !important;
 }
 
 #portfolio {
@@ -224,32 +239,38 @@ $orange:  #b66047;
 
 .portfolio-piece {
   min-height: 250px;
-  background-repeat: none !important;
-  background-size: cover !important;
+  background-size: contain !important;
 }
 
 .category-circle {
-  background: #333;
-  margin: 9px -20px 0;
+  background: rgba(51, 51, 51, 0.27);
+  margin: 0;
   width: 20px;
   height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.category-circle-active {
+  background: rgba(51, 51, 51, 1);
+  opacity: 1;
+  width: 25px;
+  height: 25px;
 }
 
 #categories {
-  padding: 55px 25px;
+  padding: 55px 10px;
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
 
   li {
     list-style-type: none;
     display: block;
     text-align: left;
-    &:hover {
-      .category-circle {
-        opacity: 1;
-        width: 25px;
-        height: 25px;
-        margin: 5px -20px 0;
-      }
-    }
   }
    a {
      text-decoration: none;
@@ -259,6 +280,14 @@ $orange:  #b66047;
        color: lighten($purp, 50%);
      }
    }
+}
+
+#next {
+  color: #000;
+}
+
+#prev {
+  color: #000;
 }
 
 h1 {
