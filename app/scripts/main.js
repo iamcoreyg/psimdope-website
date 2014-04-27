@@ -29,7 +29,9 @@ $(document).ready( function() {
 
     var category = null,
         numPiecesInCategory = 0,
-        piece = 1
+        piece = 0
+
+if(window.console) console.log("33 ;", piece);
 
     var loadPiece = function (category, piece) {
         var $categoryElement =  $('#' + category)
@@ -37,13 +39,11 @@ $(document).ready( function() {
         if(piece >= 0 && piece < numPiecesInCategory) {
             $('.portfolio-piece-selected').removeClass('portfolio-piece-selected')
             $('#' + category).children().eq(piece).addClass('portfolio-piece-selected')
-
-            console.log(category + ',' + piece)
+            if(window.console) console.log("40"+ piece);
         }
     }
 
     $('#categories a').on('click', function() {
-        piece = 1
         category = $(this).data('category')
 
         $("#pieces .row").removeClass('show')
@@ -53,20 +53,24 @@ $(document).ready( function() {
         $('.category-circle').removeClass('category-circle-active')
         $(this).prev().addClass('category-circle-active')
 
-
         return false
     })
 
     $("#next").on('click', function() {
-        piece++
-        loadPiece(category, piece)
-        console.log(category + ',' + piece)
+
+        if( piece >= 0 && piece < $('#' + category).children().length-1) {
+            piece += 1
+            loadPiece(category, piece)
+        }
         return false
     })
 
     $("#prev").on('click', function() {
-        piece--
-        loadPiece(category, piece)
+
+        if( piece > 0) {
+            piece--
+            loadPiece(category, piece)
+        }
         return false
     })
 

@@ -205,8 +205,7 @@ $orange:  #b66047;
 
 #pieces {
   position: relative;
-  height: 500px;
-  width: 500px;
+  height: 100%;
   overflow: hidden;
 
   .row {
@@ -214,8 +213,8 @@ $orange:  #b66047;
   }
 
   .portfolio-piece {
-    height: 500px;
-    width: 500px;
+    height: 80%;
+    width: 100%;
     position: absolute;
     top: -1000px;
   }
@@ -282,13 +281,14 @@ $orange:  #b66047;
    }
 }
 
-#next {
-  color: #000;
+#next, #prev {
+  color: #E2E2E2;
+  font-size: 19pt;
+  &:hover {
+    color: #000;
+  }
 }
 
-#prev {
-  color: #000;
-}
 
 h1 {
   font-family: 'Roboto', sans-serif;
