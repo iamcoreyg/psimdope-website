@@ -1,7 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,300,700);
 
 .browsehappy {
     margin: 0.2em 0;
@@ -14,8 +14,9 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: lowercase;
+  font-weight: 300;
 }
 
 #social {
@@ -63,6 +64,7 @@ body {
   }
 }
 
+
 .circle-wrap {
   width: 380px;
   margin: auto;
@@ -101,7 +103,7 @@ body {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  opacity: .7;
+  opacity: 0.7;
   transition: all .3s;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
@@ -118,6 +120,7 @@ body {
   animation-iteration-count: 1;
   opacity: 1;
 }
+
 
 .circle a {
   padding: 20px 15px;
@@ -137,7 +140,7 @@ $blue: #1878b2;
 }
 
 .brown {
-  background: $brown;
+//  background: $brown;
 }
 
 .blue {
@@ -277,7 +280,6 @@ $blue: #1878b2;
 }
 
 .category-circle {
-  background: rgba(51, 51, 51, 0.27);
   margin: 0;
   width: 20px;
   height: 20px;
@@ -287,10 +289,7 @@ $blue: #1878b2;
 }
 
 .category-circle-active {
-  background: rgba(51, 51, 51, 1);
-  opacity: 1;
-  width: 25px;
-  height: 25px;
+
 }
 
 #categories {
@@ -308,7 +307,7 @@ $blue: #1878b2;
   }
    a {
      text-decoration: none;
-     padding: 10px;
+     padding: 3px;
      color: $purp;
      &:hover {
        color: lighten($purp, 50%);
@@ -316,11 +315,18 @@ $blue: #1878b2;
    }
 }
 
+#navigation {
+  padding: 10px 0;
+}
+
 #next, #prev {
-  color: #E2E2E2;
-  font-size: 19pt;
+  opacity: .5;
+  img {
+    height: 20px;
+    width: auto
+  }
   &:hover {
-    color: #000;
+    opacity: 1;
   }
 }
 
@@ -352,8 +358,10 @@ h1 {
   overflow: hidden;
 
   img {
-    width: 176%;
+    width: 294%;
     height: auto;
+    margin-top: -50px;
+    margin-left: -70px;
   }
 }
 
@@ -363,6 +371,28 @@ h1 {
 
   .circle {
     position: inherit;
+    a {
+      position: relative;
+    }
+  }
+  .fa-linkedin {
+    color: #fff;
+    position: absolute;
+    top: 27px;
+    left: 10px;
+  }
+  .fa-envelope-o {
+    color: #fff;
+    position: absolute;
+    top: 27px;
+    left: 8px;
+  }
+  #download {
+    color: #fff;
+    position: absolute;
+    top: 29px;
+    width: 15px;
+    left: 8px;
   }
 }
 
@@ -379,6 +409,12 @@ input, textarea {
 #submit {
   background: $blue;
   color: #fff;
+}
+
+#instagram {
+  width: 31px;
+  margin-left: -12px;
+  margin-top: 10px;
 }
 
 footer {
