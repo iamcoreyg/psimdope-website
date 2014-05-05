@@ -75,7 +75,16 @@ if(window.console) console.log("33 ;", piece);
     })
 
 
+    $("#load-contact-btn").on('click', function() {
+        $('#contact-form').toggleClass('show')
+        return false
+    })
 
+    var resizeVideo = function() {
+        $('#video').css('height', $('#video').width()/1.77)
 
+    }()
+
+    $(window).resize(resizeVideo)
 
 })

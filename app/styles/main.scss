@@ -252,7 +252,8 @@ $blue: #1878b2;
 
   .portfolio-piece {
     height: 80%;
-    width: 100%;
+    width: 65%;
+    max-width: 560px;
     position: absolute;
     top: -1000px;
   }
@@ -317,6 +318,10 @@ $blue: #1878b2;
 
 #navigation {
   padding: 10px 0;
+}
+
+#contact-form {
+  display: none;
 }
 
 #next, #prev {
@@ -413,8 +418,8 @@ input, textarea {
 
 #instagram {
   width: 31px;
-  margin-left: -12px;
-  margin-top: 10px;
+  margin-left: -14px;
+  margin-top: 9px;
 }
 
 footer {
