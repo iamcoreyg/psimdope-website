@@ -202,9 +202,13 @@ $blue: #1878b2;
 .move-circles {
   opacity: 1;
   z-index: 9999;
+  animation: flashcolor 2s infinite;
+  -webkit-animation: flashcolor 2s infinite;
+  -moz-animation: flashcolor 2s infinite;
   &:hover {
-    animation: flashcolor 2s infinite;
-    -webkit-animation: flashcolor 2s infinite;
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
   }
 }
 
@@ -424,7 +428,7 @@ input, textarea {
 
 #project-video-wrap {
   margin: auto;
-  width: 40%;
+  width: 56%;
 }
 
 footer {
