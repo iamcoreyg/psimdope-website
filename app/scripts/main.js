@@ -81,7 +81,9 @@ if(window.console) console.log("33 ;", piece);
     })
 
     var resizeVideo = function() {
-        $('#video').css('height', $('#video').width()/1.77)
+        $('.video').each(function() {
+            $(this).css('height', $(this).width()/1.77)
+        })
 
     }()
 
