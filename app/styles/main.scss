@@ -235,7 +235,9 @@ $blue: #1878b2;
   ul, li {
     margin: 0;
   }
-
+ li {
+   margin-bottom: 2px;
+ }
   a, .circle {
     display: inline-block;
   }
@@ -377,7 +379,7 @@ a.text:hover {
     width: 294%;
     height: auto;
     margin-top: -50px;
-    margin-left: -70px;
+    margin-left: -76.5px;
   }
 }
 
