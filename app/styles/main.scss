@@ -344,15 +344,19 @@ h1 {
   font-family: 'Roboto', sans-serif;
 }
 
-.caption {
-  position: absolute;
-  bottom: -13%;
-  left: 0;
-  width: 75%;
-}
-
 .hide {
   display: none;
+}
+
+.text {
+  color: #949494;
+  font-size: 8pt;
+  letter-spacing: 3px;
+}
+
+a.text:hover {
+  color: #9d7cd2;
+  text-decoration: none;
 }
 
 .show {
@@ -374,8 +378,13 @@ h1 {
   }
 }
 
+#contact-download-links {
+  display: none;
+  text-align: center;
+}
+
 #contact-options {
-  width: 220px;
+  width: 215px;
   margin: 30px auto 15px;
 
   .circle {
@@ -424,6 +433,9 @@ input, textarea {
   width: 31px;
   margin-left: -14px;
   margin-top: 9px;
+  transform: translateX(-2px);
+  -webkit-transform: translateX(-2px);
+  -moz-transform: translateX(-2px);
 }
 
 #project-video-wrap {

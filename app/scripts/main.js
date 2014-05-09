@@ -76,7 +76,14 @@ if(window.console) console.log("33 ;", piece);
 
 
     $("#load-contact-btn").on('click', function() {
+        $('#contact-download-links').removeClass('show')
         $('#contact-form').toggleClass('show')
+        return false
+    })
+
+    $("#show-download-links").on('click', function() {
+        $('#contact-form').removeClass('show')
+        $('#contact-download-links').toggleClass('show')
         return false
     })
 
