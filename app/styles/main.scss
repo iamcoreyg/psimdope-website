@@ -369,6 +369,9 @@ a.text:hover {
   height: 220px;
   border-radius: 50%;
   overflow: hidden;
+  -webkit-transform: translateX(-1px);
+  -moz-transform: translateX(-1px);
+  transform: translateX(-1px);
 
   img {
     width: 294%;
