@@ -1,4 +1,6 @@
 $(document).ready( function() {
+    $('body').fadeIn()
+
     $('.full-screen').css('height', $(window).height())
 
     var navIsOpen = false
@@ -9,6 +11,8 @@ $(document).ready( function() {
         }
     })
 
+
+
     var openNavigation = function() {
         $('.circle').removeClass('move-circles')
         $('.circle').removeClass('initial-circles', 1000, 'easeInBack' )
@@ -18,6 +22,13 @@ $(document).ready( function() {
     $('.move-circles').on('click', function() {
         openNavigation()
     })
+
+
+    $('.circle-wrap a').click(function(){
+        $('body').fadeOut(function () {
+            window.location = $(this).attr("href")
+        })
+    });
 
     var $navID =  $('#nav-id')
     $('.circle a').hover(function() {
@@ -30,8 +41,6 @@ $(document).ready( function() {
     var category = null,
         numPiecesInCategory = 0,
         piece = 0
-
-if(window.console) console.log("33 ;", piece);
 
     var loadPiece = function (category, piece) {
         var $categoryElement =  $('#' + category)

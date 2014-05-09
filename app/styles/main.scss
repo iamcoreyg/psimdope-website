@@ -17,6 +17,7 @@ body {
   font-family: "Roboto", sans-serif;
   text-transform: lowercase;
   font-weight: 300;
+  display: none;
 }
 
 #social {
@@ -65,7 +66,7 @@ body {
 }
 
 
-.circle-wrap {
+.home-circle-wrap, .circle-wrap {
   width: 380px;
   margin: auto;
   position: fixed;
