@@ -65,6 +65,10 @@ body {
   }
 }
 
+input {
+  font-weight: 300;
+}
+
 
 .home-circle-wrap, .circle-wrap {
   width: 380px;
@@ -288,7 +292,7 @@ $blue: #1878b2;
 }
 
 .category-circle {
-  margin: 0;
+  margin: 5px 2px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
